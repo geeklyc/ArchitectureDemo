@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Rv-Jk-M3e">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X74-gA-N02">
+                                <rect key="frame" x="135" y="214" width="105" height="30"/>
+                                <state key="normal" title="错误Page"/>
+                                <connections>
+                                    <action selector="wrongPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEn-8B-adR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imc-i6-6Pv">
+                                <rect key="frame" x="135" y="444" width="105" height="30"/>
+                                <state key="normal" title="正确Page"/>
+                                <connections>
+                                    <action selector="rightPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BR9-nO-l6o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrR-cE-eVD">
+                                <rect key="frame" x="15" y="444" width="105" height="30"/>
+                                <state key="normal" title="正确Home"/>
+                                <connections>
+                                    <action selector="rightHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8RV-GM-BT3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A3-rV-GVQ">
+                                <rect key="frame" x="15" y="214" width="105" height="30"/>
+                                <state key="normal" title="错误Home"/>
+                                <connections>
+                                    <action selector="wrongHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ro-1c-l9f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUV-zF-EJf">
+                                <rect key="frame" x="255" y="214" width="105" height="30"/>
+                                <state key="normal" title="错误Local"/>
+                                <connections>
+                                    <action selector="wrongLocal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pjo-6D-tAw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbN-gx-WHX">
+                                <rect key="frame" x="255" y="444" width="105" height="30"/>
+                                <state key="normal" title="正确Local"/>
+                                <connections>
+                                    <action selector="rightLocal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chO-kO-ahZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="imc-i6-6Pv" firstAttribute="leading" secondItem="IrR-cE-eVD" secondAttribute="trailing" constant="15" id="A3S-Qf-qsy"/>
+                            <constraint firstItem="imc-i6-6Pv" firstAttribute="height" secondItem="IrR-cE-eVD" secondAttribute="height" id="EZw-DX-PXp"/>
+                            <constraint firstItem="HUV-zF-EJf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="FeF-PM-qlH"/>
+                            <constraint firstItem="HUV-zF-EJf" firstAttribute="height" secondItem="8A3-rV-GVQ" secondAttribute="height" id="I3u-HV-Sf8"/>
+                            <constraint firstItem="IrR-cE-eVD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="Jji-mi-kEa"/>
+                            <constraint firstItem="IrR-cE-eVD" firstAttribute="top" secondItem="8A3-rV-GVQ" secondAttribute="bottom" constant="200" id="LtI-Z7-dDk"/>
+                            <constraint firstItem="EbN-gx-WHX" firstAttribute="height" secondItem="IrR-cE-eVD" secondAttribute="height" id="az9-iR-q5N"/>
+                            <constraint firstItem="EbN-gx-WHX" firstAttribute="leading" secondItem="imc-i6-6Pv" secondAttribute="trailing" constant="15" id="beP-NZ-wDw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EbN-gx-WHX" secondAttribute="trailing" constant="15" id="bjs-Zd-QK5"/>
+                            <constraint firstItem="X74-gA-N02" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="fCR-AE-uio"/>
+                            <constraint firstItem="8A3-rV-GVQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="gxs-TJ-DWT"/>
+                            <constraint firstItem="imc-i6-6Pv" firstAttribute="width" secondItem="IrR-cE-eVD" secondAttribute="width" id="hmN-oV-pgf"/>
+                            <constraint firstItem="X74-gA-N02" firstAttribute="width" secondItem="8A3-rV-GVQ" secondAttribute="width" id="hsN-BC-Y2d"/>
+                            <constraint firstItem="8A3-rV-GVQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="hsx-aW-UX0"/>
+                            <constraint firstItem="HUV-zF-EJf" firstAttribute="leading" secondItem="X74-gA-N02" secondAttribute="trailing" constant="15" id="iUe-Se-3oH"/>
+                            <constraint firstItem="X74-gA-N02" firstAttribute="leading" secondItem="8A3-rV-GVQ" secondAttribute="trailing" constant="15" id="kaA-Vk-n2I"/>
+                            <constraint firstItem="imc-i6-6Pv" firstAttribute="top" secondItem="X74-gA-N02" secondAttribute="bottom" constant="200" id="nSl-BT-8Yb"/>
+                            <constraint firstItem="HUV-zF-EJf" firstAttribute="width" secondItem="8A3-rV-GVQ" secondAttribute="width" id="oem-Bu-P6z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HUV-zF-EJf" secondAttribute="trailing" constant="15" id="osU-Zf-Dxd"/>
+                            <constraint firstItem="EbN-gx-WHX" firstAttribute="top" secondItem="HUV-zF-EJf" secondAttribute="bottom" constant="200" id="th0-hS-hDS"/>
+                            <constraint firstItem="EbN-gx-WHX" firstAttribute="width" secondItem="IrR-cE-eVD" secondAttribute="width" id="vRA-Dr-5Pf"/>
+                            <constraint firstItem="X74-gA-N02" firstAttribute="height" secondItem="8A3-rV-GVQ" secondAttribute="height" id="ypm-Rm-d6N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oBf-EQ-fd0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502" y="-54"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4UN-CP-xB0">
+            <objects>
+                <navigationController id="2Rv-Jk-M3e" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jHA-mg-Aot">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z6q-Sz-sN5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5h7-j6-9Y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430" y="-53"/>
+        </scene>
+    </scenes>
+</document>
